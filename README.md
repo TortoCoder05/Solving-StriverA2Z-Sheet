@@ -1,5 +1,6 @@
 # Solving-StriverA2Z-Sheet
-In this repository i will be solving A2Z sheet by Striver 
+In this repository i will be solving A2Z sheet by Striver : 
+<br>
 https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
 <br>
 Problem 1 : Count of Digits (https://www.geeksforgeeks.org/problems/count-digits5716/1)
