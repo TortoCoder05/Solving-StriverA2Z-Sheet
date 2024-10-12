@@ -1,6 +1,5 @@
 Basic Maths : 
 1)Count Digits :
-problem link : https://www.geeksforgeeks.org/problems/count-digits5716/1
 //User function Template for Java
 class Solution{
     static int evenlyDivides(int N){
@@ -17,7 +16,7 @@ class Solution{
         return count; 
     }
 }
-2)Reverse a Number : https://leetcode.com/problems/reverse-integer/description/
+2)Reverse a Number :
 class Solution {
     public int reverse(int x) {
         int rev = 0;
@@ -37,7 +36,7 @@ class Solution {
         return rev;
     }
 }
-3)Check Palindrome : https://leetcode.com/problems/palindrome-number/description/
+3)Check Palindrome : 
 class Solution {
     public boolean isPalindrome(int x) {
         int rev = 0;
@@ -56,8 +55,8 @@ class Solution {
         return false;
     }
 }
-4)GCD Or HCF : https://www.geeksforgeeks.org/problems/lcm-and-gcd4516/1
-5)Armstrong Numbers : https://www.naukri.com/code360/problems/check-armstrong_589?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
+4)GCD Or HCF : 
+5)Armstrong Numbers : 
 import java.util.Scanner;
 
 public class Main {
@@ -88,7 +87,7 @@ public class Main {
 
 	}
 }
-6)Sum of all divisors from 1 to n : https://www.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n4738/1
+6)Sum of all divisors from 1 to n : 
 //User function Template for Java
 class Solution{
     static long sumOfDivisors(int N){
@@ -100,7 +99,7 @@ class Solution{
         return sum;
     }
 }
-7)Check for Prime : https://www.naukri.com/code360/problems/check-prime_624934?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+7)Check for Prime : 
 public class Solution {
 	public static String isPrime(int num) {
 		//Your code goes here
