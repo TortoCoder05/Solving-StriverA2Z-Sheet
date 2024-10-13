@@ -44,3 +44,48 @@ class Solution {
         }
     }
 }
+2)Highest/Lowest Frequency :
+import java.util.*;
+public class Solution {
+    public static int[] getFrequencies(int []v) {
+        // Write Your Code Here
+        int[] ans = new int[2];
+        HashMap<Integer,Integer> hm = new HashMap<>();
+        int n = v.length;
+        //Storing array elements into a hashmap
+        for(int i=0;i<n;i++){
+            if(hm.containsKey(v[i])){
+                int f = hm.get(v[i]);
+                hm.put(v[i],f+1);
+            }
+            else{
+                hm.put(v[i],1);
+            }
+        }
+        int maxEle = 0;
+        int minEle = 0;
+        int maxFreq = Integer.MIN_VALUE;
+        int minFreq = Integer.MAX_VALUE;
+        for(Map.Entry<Integer,Integer> e : hm.entrySet()){
+          int count = e.getValue();
+           if (count > maxFreq) {
+                maxEle = e.getKey();
+                maxFreq = count;
+            }
+            if (count < minFreq) {
+                minEle = e.getKey();
+                minFreq = count;
+            }
+            if(count == minFreq){
+                minEle = Math.min(e.getKey(),minEle);
+            }
+            if(count == maxFreq){
+                maxEle =Math.min(e.getKey(),maxEle);
+            }
+
+        }
+        ans[0] = maxEle;
+        ans[1] = minEle;
+        return ans;
+    }
+}
