@@ -31,7 +31,7 @@ Problem 3 : Sum of first N Terms(https://www.geeksforgeeks.org/problems/sum-of-f
 Problem 4 : Factorial of N numbers(https://www.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty%255B%255D=-1&page=1&query=problemTypefunctionaldifficulty%255B%255D-1page1)
 <br>
 Problem 5 : Check if a string is palindrome or not(https://leetcode.com/problems/valid-palindrome/description/)
-<b>
+<br>
 Problem 6 : Fibonacci Number(https://leetcode.com/problems/fibonacci-number/description/)
 <br>
 3.Hashing : 
