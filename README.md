@@ -3,7 +3,7 @@ In this repository i will be solving A2Z sheet by Striver :
 <br>
 Step 1 : Basics 
 <br>
-1. Basic Math
+1. Basic Math : 
 <br>
 https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
 <br>
@@ -21,7 +21,7 @@ Problem 5 : Sum of all divisors from 1 to n (https://www.geeksforgeeks.org/probl
 <br>
 Problem 6 :  Check for Prime(https://www.naukri.com/code360/problems/check-prime_624934?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM)
 <br>
-2. Recursion
+2. Recursion : 
 Problem 1 : Print 1 To N(https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print-1-to-n-without-using-loops)
 <br>
 Problem 2 : Print N To 1(https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print-n-to-1-without-loop)
@@ -33,8 +33,9 @@ Problem 4 : Factorial of N numbers(https://www.geeksforgeeks.org/problems/find-a
 Problem 5 : Check if a string is palindrome or not(https://leetcode.com/problems/valid-palindrome/description/)
 <b>
 Problem 6 : Fibonacci Number(https://leetcode.com/problems/fibonacci-number/description/)
-3.Hashing
+<br>
+3.Hashing : 
+<br>
 Problem 1 : Frequencies of Limited Range Array Elements(https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/0)
 <br>
 Problem 2 : Highest/Lowest Frequency Elements(https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382)
-<br>
