@@ -40,7 +40,7 @@ Problem 1 : Frequencies of Limited Range Array Elements(https://www.geeksforgeek
 <br>
 Problem 2 : Highest/Lowest Frequency Elements(https://www.naukri.com/code360/problems/k-most-occurrent-numbers_625382)
 <br>
-<h1>Step 2 : Learn Important Sorting Techniques</h1>
+<h1>Step 2 : Learning Important Sorting Techniques</h1>
 <br>
 <h3>Sorting 1:</h3>
 <br>
