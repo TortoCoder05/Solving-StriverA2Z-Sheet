@@ -76,7 +76,7 @@ class Solution
   }
 } 
 2)Sorting 2 :
-1.Merge Sort -> TC : O(NLOGN) SC : O(N)
+1.Merge Sort -> TC : O(NlogN) SC : O(N)
 class Solution {
 
     void mergeSort(int arr[], int low, int high) {
@@ -177,3 +177,36 @@ class Solution
     insert(arr,n-1);
   }
 }
+4.Quick Sort -> TC : O(N*logN) SC : O(logN)
+class Solution
+{
+    //Function to sort an array using quick sort algorithm.
+    static void quickSort(int arr[], int low, int high)
+    {
+        // code here
+         if(low >= high)
+           return;
+        int p = partition(arr,low,high);
+        quickSort(arr,low,p-1);
+        quickSort(arr,p+1,high); 
+    }
+    static int partition(int arr[], int low, int high)
+    {
+        // your code here
+        int x = arr[high];
+        int j = low;
+        for(int i=low;i<high;i++){
+            if(arr[i] < x){
+                int temp1 = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp1;
+                j++;
+            }
+        }
+            int temp2 = arr[j];
+            arr[j] = arr[high];
+            arr[high] = temp2;
+            return j;
+    } 
+}
+
