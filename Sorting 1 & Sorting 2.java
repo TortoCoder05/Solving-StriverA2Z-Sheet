@@ -1,5 +1,6 @@
 Sorting 1 :
 1. Selection Sort -> TC : O(N^2) SC : O(1)
+	Idea : Select minimum from the array and swap them.
 class Solution
 {
 	int  select(int arr[], int i)
@@ -28,6 +29,7 @@ class Solution
 	}
 }
 2.Bubble Sort -> TC : O(N^2) SC : O(1)
+	Idea : Everytime you're comparing adjacent elements if they're not in the correct order swap. 
 //User function Template for Java
 
 class Solution
@@ -52,6 +54,9 @@ class Solution
     }
 }
 3.Insertion Sort -> TC:O(N^2) SC : O(1)
+	Idea : 
+Insertion Step : first "N-1" elements are sorted,sort the entire array.
+Insertion Sort : Your data is sorted you're inserting one element to make entire data sorted.
 class Solution
 {
   static void insert(int arr[],int i)
@@ -77,6 +82,7 @@ class Solution
 } 
 2)Sorting 2 :
 1.Merge Sort -> TC : O(NlogN) SC : O(N)
+	Idea : keep dividng array[], till it contains 1 element and merge them.
 class Solution {
 
     void mergeSort(int arr[], int low, int high) {
