@@ -83,18 +83,18 @@ class Solution {
 import java.util.Scanner;
 
 public class Main {
-	
-	public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        int n =scn.nextInt();
-		// Write your code here
-		int sum = 0;
-        int temp = n;
-        int numOfDigit = 0;
-        while(n > 0){
-            n = n/10;
-            numOfDigit++;
-        }
+public static void main(String[] args) {
+Scanner scn = new Scanner(System.in);
+int n =scn.nextInt();
+// Write your code here
+ int sum = 0;
+ int temp = n;
+int numOfDigit = 0;
+while(n > 0)
+{
+        n = n/10;
+        numOfDigit++;
+}
         n = temp;
         while(n > 0){
          int d = n % 10;
