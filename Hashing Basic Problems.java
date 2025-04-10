@@ -1,6 +1,26 @@
 3)Hashing :
 1)Frequencies of limited range array : 
 Brute Force Approach : TC : O(N) & SC : O(N)
+    class Solution {
+    // Function to count the frequency of all elements from 1 to N in the array.
+    public List<Integer> frequencyCount(int[] arr) {
+        // do modify in the given array
+        int n = arr.length;
+        HashMap<Integer,Integer> hm = new HashMap<>();
+        for(int i=1;i<=n;i++){
+            hm.put(i,0);
+        }
+        for(int i=0;i<n;i++){
+            if(hm.containsKey(arr[i])){
+                int f = hm.get(arr[i]);
+                hm.put(arr[i],f+1);
+            }
+        }
+      ArrayList<Integer> al = new ArrayList<>(hm.values());
+      return al;
+    }
+}
+                                 OR
 class Solution {
     // Function to count the frequency of all elements from 1 to N in the array.
     public static void frequencyCount(int arr[], int N, int P) {
