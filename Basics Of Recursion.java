@@ -29,11 +29,14 @@ class Solution {
 }
 3)Sum of first n terms :
 class Solution {
-    long sum = 0;
-    long sumOfSeries(long n) {
-        sum = (n * n * (n+1) * (n+1))/4;
-        return sum;
-}
+    int sumOfSeries(int n) {
+        //write your code from here
+        if(n == 1){
+            return 1;
+        }
+           sumOfSeries(n-1);
+           return (n * n * (n+1) * (n+1))/4;
+    }
 }
 4)Find all factorial numbers less than or equal to n :
 // User function Template for Java
