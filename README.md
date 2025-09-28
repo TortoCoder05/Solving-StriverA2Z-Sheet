@@ -62,7 +62,7 @@ Problem 3 : Recursive Insertion Sort(https://www.geeksforgeeks.org/problems/inse
 Problem 4 : Quick Sort(https://www.geeksforgeeks.org/problems/quick-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=quick-sort)
 <h1>Step 4: Binary Search</h1>
 <br>
-<h4>BS On 1D Arrays</h4>
+<h4>1.BS On 1D Arrays</h4>
 <br>
 Problem 1 : Binary Search to find X in sorted array(https://leetcode.com/problems/binary-search/description/)
 <br>
