@@ -60,9 +60,7 @@ Problem 2 : Recursive Bubble Sort(https://www.geeksforgeeks.org/problems/bubble-
 Problem 3 : Recursive Insertion Sort(https://www.geeksforgeeks.org/problems/insertion-sort/0?category%5B%5D=Algorithms&page=1&query=category%5B%5DAlgorithmspage1&utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=insertion-sort)
 <br>
 Problem 4 : Quick Sort(https://www.geeksforgeeks.org/problems/quick-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=quick-sort)
-<h1>Step 4:</h1>
-<br>
-<h3>Binary Search</h3>
+<h1>Step 4: Binary Search</h1>
 <br>
 <h4>BS On 1D Arrays</h4>
 <br>
