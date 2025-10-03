@@ -19,7 +19,56 @@ class Solution {
     return -1;
     }
 }
-2. Search Insert Position : 
+2. Implement Lower Bound : 
+class Solution {
+    int lowerBound(int[] arr, int target) {
+        // code here
+        int n = arr.length;
+        int l = 0;
+        int h = n - 1;
+        int ans = n;
+        while(l <= h){
+            int m = (l+h)/2;
+            if(arr[m] == target){
+                ans = m;
+                 h = m - 1;
+            }
+            else if(arr[m] > target){
+                ans = m;
+                h = m - 1;
+            }
+            else{
+                l = m + 1;
+            }
+        }
+        return ans;
+    }
+}
+3. Implement Upper Bound : 
+class Solution {
+    int upperBound(int[] arr, int target) {
+        // code here
+         int n = arr.length;
+        int l = 0;
+        int h = n - 1;
+        int ans = n;
+        while(l <= h){
+            int m = (l+h)/2;
+            if(arr[m] == target){
+                l = m + 1;
+            }
+            else if(arr[m] > target){
+                ans = m;
+                h = m - 1;
+            }
+            else{
+                l = m + 1;
+            }
+        }
+        return ans;
+    }
+}
+4. Search Insert Position : 
 class Solution {
     public int searchInsert(int[] A, int B) {
        int n = A.length;
