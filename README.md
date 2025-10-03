@@ -66,5 +66,9 @@ Problem 4 : Quick Sort(https://www.geeksforgeeks.org/problems/quick-sort/1?utm_s
 <br>
 Problem 1 : Binary Search to find X in sorted array(https://leetcode.com/problems/binary-search/description/)
 <br>
-Problem 2 : Search Insert Position(https://leetcode.com/problems/search-insert-position/)
+Problem 2 : Implement Lower Bound(https://www.geeksforgeeks.org/problems/implement-lower-bound/1)
+<br>
+Problem 3 : Implement Upper Bound(https://www.geeksforgeeks.org/problems/implement-upper-bound/1)
+<br>
+Problem 4 : Search Insert Position(https://leetcode.com/problems/search-insert-position/)
 
