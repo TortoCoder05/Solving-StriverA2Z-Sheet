@@ -134,3 +134,106 @@ class Solution {
         return ans; 
     }
 }
+7.Find First and Last Position of Element in Sorted Array :
+    class Solution {
+    public int[] searchRange(int[] nums, int target) {
+       int[] ans = new int[2];
+       ans[0] = firstIndex(nums,target);
+       ans[1] = lastIndex(nums,target);
+       return ans;
+    }
+ public int firstIndex(int[] ar,int k){
+     int n = ar.length;
+     int first = -1;
+     int l = 0;
+     int h = n-1;
+     while(l<=h){
+         int m = (l+h)/2;
+         if(ar[m] == k){
+            first = m;
+            h = m-1; 
+         }
+         else if(ar[m] < k){
+             l = m + 1;
+         }
+         else{
+             h = m - 1;
+         }
+     }
+     return first;
+ }
+ public int lastIndex(int[] ar,int k){
+     int n = ar.length;
+     int l = 0;
+     int h = n-1;
+     int last = -1;
+     while(l<=h){
+         int m = (l+h)/2;
+         if(ar[m] == k){
+             last = m;
+             l = m + 1;
+         }
+         else if(ar[m] < k){
+             l = m + 1;
+         }
+         else{
+             h = m - 1;
+         }
+     }
+     return last;
+ }
+}
+8. Number of occurrence
+class Solution {
+        // code here
+    int countFreq(int[] nums, int target) {
+       int fi= firstIndex(nums,target);
+       int la = lastIndex(nums,target);
+       if(fi >= 0 && la >= 0){
+            return la-fi+1;
+       }
+       return 0;
+    }
+ public int firstIndex(int[] ar,int k){
+     int n = ar.length;
+     int first = -1;
+     int l = 0;
+     int h = n-1;
+     while(l<=h){
+         int m = (l+h)/2;
+         if(ar[m] == k){
+            first = m;
+            h = m-1; 
+         }
+         else if(ar[m] < k){
+             l = m + 1;
+         }
+         else{
+             h = m - 1;
+         }
+     }
+     return first;
+ }
+ public int lastIndex(int[] ar,int k){
+     int n = ar.length;
+     int l = 0;
+     int h = n-1;
+     int last = -1;
+     while(l<=h){
+         int m = (l+h)/2;
+         if(ar[m] == k){
+             last = m;
+             l = m + 1;
+         }
+         else if(ar[m] < k){
+             l = m + 1;
+         }
+         else{
+             h = m - 1;
+         }
+     }
+     return last;
+ }
+}
+
+  
