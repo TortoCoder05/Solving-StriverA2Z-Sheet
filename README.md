@@ -71,4 +71,8 @@ Problem 2 : Implement Lower Bound(https://www.geeksforgeeks.org/problems/impleme
 Problem 3 : Implement Upper Bound(https://www.geeksforgeeks.org/problems/implement-upper-bound/1)
 <br>
 Problem 4 : Search Insert Position(https://leetcode.com/problems/search-insert-position/)
+<br>
+Problem 5 : Floor in a sorted array(https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1)
+<br>
+Problem 5 : Ceil in a sorted array(https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1)
 
