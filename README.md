@@ -74,5 +74,5 @@ Problem 4 : Search Insert Position(https://leetcode.com/problems/search-insert-p
 <br>
 Problem 5 : Floor in a sorted array(https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1)
 <br>
-Problem 5 : Ceil in a sorted array(https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1)
+Problem 6 : Ceil in a sorted array(https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1)
 
