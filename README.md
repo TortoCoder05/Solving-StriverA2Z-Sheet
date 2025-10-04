@@ -75,4 +75,8 @@ Problem 4 : Search Insert Position(https://leetcode.com/problems/search-insert-p
 Problem 5 : Floor in a sorted array(https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1)
 <br>
 Problem 6 : Ceil in a sorted array(https://www.geeksforgeeks.org/problems/ceil-in-a-sorted-array/1)
+<br>
+Problem 7 : Find First and Last Position of Element in Sorted Array (https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/1102622779/)
+<br>
+Problem 8 : Number of occurrence(https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1)
 
