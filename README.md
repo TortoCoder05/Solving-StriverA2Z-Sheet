@@ -79,4 +79,6 @@ Problem 6 : Ceil in a sorted array(https://www.geeksforgeeks.org/problems/ceil-i
 Problem 7 : Find First and Last Position of Element in Sorted Array (https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/1102622779/)
 <br>
 Problem 8 : Number of occurrence(https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1)
+<br>
+Problem 9 : Find Peak Element(https://leetcode.com/problems/find-peak-element/description/)
 
