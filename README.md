@@ -80,5 +80,5 @@ Problem 7 : Find First and Last Position of Element in Sorted Array (https://lee
 <br>
 Problem 8 : Number of occurrence(https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1)
 <br>
-Problem 9 : Find Peak Element(https://leetcode.com/problems/find-peak-element/description/n)
+Problem 9 : Find Peak Element(https://leetcode.com/problems/find-peak-element/description/)
 
