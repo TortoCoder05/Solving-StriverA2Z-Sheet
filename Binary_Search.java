@@ -267,6 +267,76 @@ class Solution {
      return -1;
     }
 }
-
-
+10. Search in Rotated Sorted Array I 
+    class Solution {
+    public int search(int[] nums, int target) {
+     int n = nums.length;
+     int st=0,end=n-1;
+      while(st <= end){
+        int m = st + (end-st)/2;
+        if(nums[m] == target){
+            return m;
+        }
+        if(nums[st] == nums[m] && nums[m] == nums[end]){
+            st++;
+            end--;
+        }
+        else if(nums[st] <= nums[m]){ //left sorted
+        if(nums[st] <= target && target<= nums[m]){
+            //goto left
+            end = m - 1;
+        }
+        else{
+            st = m + 1;
+        }
+        }
+        else{//right sorted
+        if(nums[m] <= target && target <= nums[end]){
+         //goto right
+         st = m + 1;
+        }
+        else{
+            end = m - 1;
+        }
+        }
+      }
+      return -1;
+    }
+}
+11. Search in Rotated Sorted Array II
+    class Solution {
+    public boolean search(int[] nums, int target) {
+     int n = nums.length;
+     int st=0,end=n-1;
+      while(st <= end){
+        int m = st + (end-st)/2;
+        if(nums[m] == target){
+            return true;
+        }
+        if(nums[st] == nums[m] && nums[m] == nums[end]){//if duplicates present 
+            st++;
+            end--;
+        }
+        else if(nums[st] <= nums[m]){ //left sorted
+        if(nums[st] <= target && target<= nums[m]){
+            //goto left
+            end = m - 1;
+        }
+        else{
+            st = m + 1;
+        }
+        }
+        else{//right sorted
+        if(nums[m] <= target && target <= nums[end]){
+         //goto right
+         st = m + 1;
+        }
+        else{
+            end = m - 1;
+        }
+        }
+      }
+      return false;
+    }
+}
   
