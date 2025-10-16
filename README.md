@@ -81,4 +81,9 @@ Problem 7 : Find First and Last Position of Element in Sorted Array (https://lee
 Problem 8 : Number of occurrence(https://www.geeksforgeeks.org/problems/number-of-occurrence2259/1)
 <br>
 Problem 9 : Find Peak Element(https://leetcode.com/problems/find-peak-element/description/)
+<br>
+Problem 10 : Search in Rotated Sorted Array I (https://leetcode.com/problems/search-in-rotated-sorted-array/)
+<br>
+Problem 11 : Search in Rotated Sorted Array II (https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+
 
