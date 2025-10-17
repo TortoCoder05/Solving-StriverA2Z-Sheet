@@ -85,5 +85,11 @@ Problem 9 : Find Peak Element(https://leetcode.com/problems/find-peak-element/de
 Problem 10 : Search in Rotated Sorted Array I (https://leetcode.com/problems/search-in-rotated-sorted-array/)
 <br>
 Problem 11 : Search in Rotated Sorted Array II (https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+<br>
+Problem 12 : Find minimum in Rotated Sorted Array(https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
+<br>
+Problem 13 : Find out how many times has an array been rotated(https://www.geeksforgeeks.org/problems/rotation4723/1)
+<br>
+Problem 14 : Single element in a Sorted Array(https://leetcode.com/problems/single-element-in-a-sorted-array/description/)
 
 
