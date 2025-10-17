@@ -339,4 +339,46 @@ class Solution {
       return false;
     }
 }
-  
+12. Find minimum in Rotated Sorted Array
+    class Solution {
+    public int findMin(int[] nums) {
+     int n = nums.length;
+     int l=0,h=n-1;
+     int ans = nums[0];
+     while(l <= h){
+        int m = l + (h - l/2);
+        if(nums[l] <= nums[m]){//left sorted
+             ans = Math.min(ans,nums[m]);
+             l = m + 1;
+        }
+        else{//right sorted
+         ans = Math.min(ans,nums[m]);
+         h = m - 1;
+        }
+     }   
+     return ans;
+    }
+}
+13. Find out how many times has an array been rotated
+    class Solution {
+    public int findKRotation(int arr[]) {
+        // Code here
+        int n = arr.length;
+        int l=0,h=n-1;
+        int ans = 0;
+        int c = arr[0];
+        while(l <= h){
+            int m = l + (h-l)/2;
+            if(arr[m] < c){//goto left 
+                ans = m;
+                h = m - 1;
+            }
+            else{//goto right
+                l = m + 1;
+            }
+        }
+        return ans;
+    }
+}
+14. Single element in a Sorted Array
+    
