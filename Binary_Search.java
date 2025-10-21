@@ -381,4 +381,34 @@ class Solution {
     }
 }
 14. Single element in a Sorted Array
-    
+   class Solution {
+    public int singleNonDuplicate(int[] nums) {
+     int n = nums.length;
+     if(n == 1){
+        return nums[0];
+     }   
+     if(nums[0] != nums[1]){
+        return nums[0];
+     }
+      if(nums[n-1] != nums[n-2]){
+        return nums[n-1];
+     }
+     int l = 1,h=n-2;
+     while(l <= h){
+        int m = l + (h-l)/2;
+        if(nums[m] != nums[m-1] && nums[m] != nums[m+1]){
+            return nums[m];
+        }
+        if(nums[m] == nums[m-1]){
+            m = m - 1;
+        }
+        if(m % 2 == 0){//present on left,goto right
+            l = m + 2;
+        }
+        else{//present on right,goto left
+            h = m - 1;
+        }
+     }
+     return -1;
+    }
+} 
