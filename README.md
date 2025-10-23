@@ -91,5 +91,11 @@ Problem 12 : Find minimum in Rotated Sorted Array(https://leetcode.com/problems/
 Problem 13 : Find out how many times has an array been rotated(https://www.geeksforgeeks.org/problems/rotation4723/1)
 <br>
 Problem 14 : Single element in a Sorted Array(https://leetcode.com/problems/single-element-in-a-sorted-array/description/)
+<br>
+<h4>BS On Answers</h4>
+<br>
+Problem 1 : Find square root of a number in log n(https://leetcode.com/problems/sqrtx/description/)
+<br>
+Problem 2 : Find the Nth root of a number using binary search(https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1)
 
 
