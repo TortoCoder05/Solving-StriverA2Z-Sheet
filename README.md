@@ -92,7 +92,7 @@ Problem 13 : Find out how many times has an array been rotated(https://www.geeks
 <br>
 Problem 14 : Single element in a Sorted Array(https://leetcode.com/problems/single-element-in-a-sorted-array/description/)
 <br>
-<h4>BS On Answers</h4>
+<h4>2.BS On Answers</h4>
 <br>
 Problem 1 : Find square root of a number in log n(https://leetcode.com/problems/sqrtx/description/)
 <br>
