@@ -440,7 +440,7 @@ class Solution {
         int h = m;
         while(l <= h){
             int mid = l + (h-l)/2;
-            int val = findingPower(n,mid);
+            int val = findingPower(n,mid,m);
             if(val == m){
                 return mid;
             }
@@ -453,10 +453,13 @@ class Solution {
         }
         return -1;
     }
-    public int findingPower(int h1,int h2){
+    public int findingPower(int h1,int h2,int limit){
         int result = 1;
         for(int i=1;i<=h1;i++){
             result = result * h2;
+             if(result > limit){//to avoid overflow,if result exceeds limit 
+                return result;
+            }
         }
         return result;
     }
