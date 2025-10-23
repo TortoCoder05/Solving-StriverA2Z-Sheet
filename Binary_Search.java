@@ -440,10 +440,11 @@ class Solution {
         int h = m;
         while(l <= h){
             int mid = l + (h-l)/2;
-            if((int)Math.pow(mid,n) == m){
+            int val = findingPower(n,mid);
+            if(val == m){
                 return mid;
             }
-            else if((int)Math.pow(mid,n) < m){
+            else if(val < m){
                 l = mid + 1;
             }
             else{
@@ -452,5 +453,11 @@ class Solution {
         }
         return -1;
     }
+    public int findingPower(int h1,int h2){
+        int result = 1;
+        for(int i=1;i<=h1;i++){
+            result = result * h2;
+        }
+        return result;
+    }
 }
-
