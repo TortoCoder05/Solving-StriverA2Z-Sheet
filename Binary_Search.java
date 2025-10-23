@@ -412,3 +412,25 @@ class Solution {
      return -1;
     }
 } 
+2.BS On Answers :
+1. Find square root of a number in log n
+    class Solution {
+    public int mySqrt(int x) {
+      long ans = 0;
+      long l = 1;
+      long h = x;
+      while(l <= h){
+        long m = l + (h-l)/2;
+        if(m * m <= x){
+            ans = m;
+            l = m + 1;
+        }
+        else{
+            h = m - 1;
+        }
+      }  
+      return (int)ans;
+    }
+}
+2. Find the Nth root of a number using binary search
+
