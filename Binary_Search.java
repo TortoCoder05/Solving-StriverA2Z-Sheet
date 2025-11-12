@@ -464,3 +464,98 @@ class Solution {
         return result;
     }
 }
+3. The Painter's Partition Problem-II
+class Solution {
+    public int minTime(int[] arr, int k) {
+        // code here
+        int n = arr.length;
+        int max = arr[0];
+        int sum = arr[0];
+        for(int i=1;i<n;i++){
+            if(max < arr[i]){
+                max = arr[i];
+            }
+            sum += arr[i];
+        }
+        int l = max;
+        int h = sum;
+        int ans = h;
+        while(l <= h){
+            int m = (l+h)/2;
+            if(check(m,arr,k)){
+                ans = m;
+                h = m - 1;
+            }
+            else{
+                l = m + 1;
+            }
+        }
+        return ans;
+    }
+    public boolean check(int mid,int[] a,int w){
+        int n = a.length;
+        int s = 0;
+        int p = 1;
+        for(int i=0;i<n;i++){
+            s = s + a[i];
+            if(s > mid){
+                p = p + 1;
+                s = a[i];
+            }
+        }
+        if(p > w){
+            return false;
+        }
+        return true;
+    }
+}
+4. Allocate Minimum Pages
+    class Solution {
+    public int findPages(int[] arr, int k) {
+        // code here
+        int n = arr.length;
+        if(n < k){
+            return -1;
+        }
+         int max = arr[0];
+        int sum = arr[0];
+        for(int i=1;i<n;i++){
+            if(max < arr[i]){
+                max = arr[i];
+            }
+            sum += arr[i];
+        }
+        int l = max;
+        int h = sum;
+        int ans = h;
+        while(l <= h){
+            int m = (l+h)/2;
+            if(check(m,arr,k)){
+                ans = m;
+                h = m - 1;
+            }
+            else{
+                l = m + 1;
+            }
+        }
+        return ans;
+    }
+    public boolean check(int mid,int[] a,int w){
+        int n = a.length;
+        int s = 0;
+        int p = 1;
+        for(int i=0;i<n;i++){
+            s = s + a[i];
+            if(s > mid){
+                p = p + 1;
+                s = a[i];
+            }
+        }
+        if(p > w){
+            return false;
+        }
+        return true;
+    }
+}
+5. Aggressive Cows
+    
