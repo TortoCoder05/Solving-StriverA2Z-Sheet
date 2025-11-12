@@ -97,5 +97,14 @@ Problem 14 : Single element in a Sorted Array(https://leetcode.com/problems/sing
 Problem 1 : Find square root of a number in log n(https://leetcode.com/problems/sqrtx/description/)
 <br>
 Problem 2 : Find the Nth root of a number using binary search(https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1)
+<br>
+Problem 3 : The Painter's Partition Problem-II(https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)
+<br>
+Problem 4 : Allocate Minimum Pages(https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1)
+<br>
+Problem 5 : Aggressive Cows(https://www.geeksforgeeks.org/problems/aggressive-cows/1)
+<br>
+Problem 6 : Minimize Max Distance to Gas Station(https://www.geeksforgeeks.org/problems/minimize-max-distance-to-gas-station/1) 
+<br>
 
 
