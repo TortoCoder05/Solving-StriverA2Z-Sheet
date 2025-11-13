@@ -558,4 +558,47 @@ class Solution {
     }
 }
 5. Aggressive Cows
-    
+    class Solution 
+{
+    public int aggressiveCows(int[] stalls, int k) {
+        // code here
+      int n = stalls.length;
+      Arrays.sort(stalls);
+      int dist = 0;
+      for(int i=0;i<n-1;i++){
+          int adj = stalls[i+1]-stalls[i];
+          dist = Math.min(dist,adj);
+      }
+      int l = dist;
+      int h = stalls[n-1] - stalls[0];
+      int ans = l;
+      while(l <= h){
+          int mid = (l+h)/2;
+          if(check(stalls,mid,k)){
+              ans = mid;
+              l = mid + 1;
+          }
+          else{
+              h = mid - 1;
+          }
+      }
+      return ans;
+    }
+    public boolean check(int[] stall,int m,int cows)
+    {
+      int n = stall.length;
+      int c = 1;
+      int dist = stall[0];
+      for(int i=1;i<n;i++){
+          if(stall[i]-dist >= m){
+              c++;
+              dist = stall[i];
+          }
+        }
+         if(c >= cows){
+             return true;
+         }
+         return false;
+   }
+}
+6.
