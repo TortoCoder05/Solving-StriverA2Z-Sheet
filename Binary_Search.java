@@ -601,4 +601,40 @@ class Solution {
          return false;
    }
 }
-6.
+6.Minimize Max Distance to Gas Station
+    class Solution {
+    public double minMaxDist(int[] stations, int K) {
+        // code here
+      int n = stations.length;
+      double l = 0;
+      double h = stations[n-1] - stations[0];
+      double ans = h;
+      while(l <= h){
+          double mid = (l+h)/2.0;
+          if(check(stations,mid,K)){
+              ans = mid;
+              h = mid - 0.000001;
+          }
+          else{
+              l = mid + 0.000001;
+          }
+      }
+      return ans;
+    }
+    public boolean check(int[] station,double m,int d)
+    {
+      int n = station.length;
+      int count = 0;
+      for(int i=1;i<n;i++){
+          double diff = station[i] - station[i-1];
+          if(diff > m){
+              count += diff/m;
+          }
+        }
+         if(count > d){
+             return false;
+         }
+         return true;
+   }
+}
+//0.000001 ensures your binary search narrows to that precision
