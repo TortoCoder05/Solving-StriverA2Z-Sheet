@@ -638,3 +638,40 @@ class Solution {
    }
 }
 //0.000001 ensures your binary search narrows to that precision
+7. Koko Eating Bananas
+    class Solution {
+    public int minEatingSpeed(int[] arr, int h) {
+      int n = arr.length;
+      int max = arr[0];
+        for(int i=1;i<n;i++){
+            if(max < arr[i]){
+                max = arr[i];
+            }
+        }
+        int low = 1;
+        int high = max;
+        int ans = max;
+        while(low <= high){
+            int m = (low+high)/2;
+            if(check(m,arr,h)){
+                ans = m;
+                high = m - 1;
+            }
+            else{
+                low = m + 1;
+            }
+        }
+        return ans;
+    }
+    public boolean check(int m,int[] piles,int h){
+       int n = piles.length;
+       double c = 0.0;
+       for(int i=0;i<n;i++){
+        c = c + Math.ceil((double)piles[i]/(double)m);
+       }
+       if(c <= h){
+        return true;
+       }
+       return false;
+    }
+}
