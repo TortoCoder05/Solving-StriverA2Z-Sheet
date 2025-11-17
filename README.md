@@ -106,5 +106,6 @@ Problem 5 : Aggressive Cows(https://www.geeksforgeeks.org/problems/aggressive-co
 <br>
 Problem 6 : Minimize Max Distance to Gas Station(https://www.geeksforgeeks.org/problems/minimize-max-distance-to-gas-station/1) 
 <br>
+Problem 7 : Koko Eating Bananas(https://leetcode.com/problems/koko-eating-bananas/description/)
 
 
