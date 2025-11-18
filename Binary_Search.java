@@ -722,3 +722,44 @@ class Solution {
        return bouque >= m;
     }
 }
+9. Capacity To Ship Packages Within D Days
+    class Solution {
+    public int shipWithinDays(int[] weights, int days) {
+        int n = weights.length;
+        int sum = weights[0];
+        int max = weights[0];
+        for(int i=1;i<n;i++){
+            if(max < weights[i]){
+                max = weights[i];
+            }
+            sum += weights[i];
+        }
+        int l = max;
+        int h = sum;
+        int ans = h;
+        while(l <= h){
+            int m = (l+h)/2;
+            if(check(m,weights,days)){
+                ans = m;
+                h = m - 1;
+            }
+            else{
+                l = m + 1;
+            }
+        }
+        return ans;
+    }
+    public boolean check(int mid,int[] a,int day){
+        int n = a.length;
+        int sum = 0;
+        int noOfDays = 1;
+        for(int i=0;i<n;i++){
+            sum += a[i];
+            if(sum > mid){
+                noOfDays += 1;
+                sum = a[i];
+            }
+        }
+        return noOfDays <= day;
+    }
+}
