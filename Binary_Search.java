@@ -675,3 +675,50 @@ class Solution {
        return false;
     }
 }
+8. Minimum Number of Days to Make m Bouquets
+    class Solution {
+    public int minDays(int[] bloomDay, int m, int k) {
+      int n = bloomDay.length;
+      if((long)m * (long)k > n){
+        return -1;
+      }
+      int max = 0;
+      for(int i=0;i<n;i++){
+        if(max < bloomDay[i]){
+            max = bloomDay[i];
+        }
+      }
+        int low = 1;
+        int high = max;
+        long ans = max;
+        while(low <= high){
+            int mid = (low+high)/2;
+            if(check(bloomDay,mid,m,k)){
+                ans = mid;
+                high = mid - 1;
+            }
+            else{
+                low = mid + 1;
+            }
+        }
+        return (int)ans;
+    }
+    public boolean check(int[] bloomDay,int mid,int m,int k){ 
+        int n = bloomDay.length;
+        int c = 0;
+        int bouque = 0;
+        for(int i=0;i<n;i++){
+            if(bloomDay[i] <= mid){
+                c++;
+                if(c == k){
+                    bouque++;
+                    c=0;
+                }
+            }
+                else{
+                    c=0;
+                }
+        }
+       return bouque >= m;
+    }
+}
