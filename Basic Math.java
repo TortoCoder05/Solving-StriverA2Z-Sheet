@@ -79,6 +79,26 @@ class Solution {
     }
 }
 4)GCD Or HCF : 
+Euclidean Algorithm : gcd(a,b) = gcd(a-b,b) 
+ Avoid taking a-b because it will increase TC, instead use % operator because it will execute the code efficiently
+class Solution {
+    public static int gcd(int a, int b) {
+        // code here
+        while(a > 0 && b > 0){
+            if(a > b){
+                a = a % b;
+            }
+            else{
+                b = b % a;
+            }
+        }
+        if(a == 0){
+            return b;
+        }
+        return a;
+    }
+}
+
 5)Armstrong Numbers : 
 import java.util.Scanner;
 
