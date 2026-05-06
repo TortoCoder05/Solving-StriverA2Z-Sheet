@@ -13,7 +13,7 @@ Problem 2 : Reverse a Number (https://leetcode.com/problems/reverse-integer/desc
 <br>
 Problem 3 : Check Palindrome (https://leetcode.com/problems/palindrome-number/description/)
 <br>
-Problem 4 : GCD Or HCF (https://www.geeksforgeeks.org/problems/lcm-and-gcd4516/1)
+Problem 4 : GCD Or HCF (https://www.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1)
 <br>
 Problem 4 : Armstrong Numbers (https://www.naukri.com/code360/problems/check-armstrong_589?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 <br>
