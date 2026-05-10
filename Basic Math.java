@@ -100,36 +100,40 @@ class Solution {
 }
 
 5)Armstrong Numbers : 
-import java.util.Scanner;
-
-public class Main {
-public static void main(String[] args) {
-Scanner scn = new Scanner(System.in);
-int n =scn.nextInt();
-// Write your code here
- int sum = 0;
- int temp = n;
-int numOfDigit = 0;
-while(n > 0)
-{
-        n = n/10;
-        numOfDigit++;
-}
-        n = temp;
-        while(n > 0){
-         int d = n % 10;
-         n = n/10;
-         sum = sum + (int)Math.pow(d,numOfDigit);
-        }
-        if(sum == temp){
-            System.out.println(true);
-        }
-        else{
-            System.out.println(false);
-        }
-
+import java.util.*;
+public class Main {	
+	public static void main(String[] args) {
+		// Write your code here
+     Scanner scn = new Scanner(System.in);
+     int n = scn.nextInt();
+     int d = countDigits(n);
+     int ans = findingArmNum(d,n);
+     if(ans == n){
+       System.out.println("true");
+     }
+     else{
+     System.out.println("false");
+     }
 	}
+    public static int countDigits(int A){
+        int c = 0;
+        while(A > 0){
+            c++;
+            A = A / 10;
+        }
+        return c;
+    }
+    public static int findingArmNum(int power,int N){
+      int sum = 0;
+      while(N > 0){
+        int digit = N % 10;
+        N = N / 10;
+        sum = sum + (int)Math.pow(digit,power);
+      }
+      return sum;
+    }
 }
+
 6)Sum of all divisors from 1 to n : 
 //User function Template for Java
 class Solution{
