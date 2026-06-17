@@ -1,6 +1,6 @@
 3)Hashing :
 1)Frequencies of limited range array : 
-Brute Force Approach : TC : O(N) & SC : O(N)
+  TC : O(N) & SC : O(N)
     class Solution {
     // Function to count the frequency of all elements from 1 to N in the array.
     public List<Integer> frequencyCount(int[] arr) {
@@ -41,27 +41,6 @@ class Solution {
            al.add(entry.getValue());
        }
        return al;
-    }
-}
-Space Optimised Approach : TC : O(N) & SC : O(1)
-To understand this problem even better do check it out at my medium account
-https://medium.com/@wajiha25/problem-from-striver-a2z-sheet-topic-hashing-gfg-easy-level-bdf860a2c2ed
-
-class Solution {
-    // Function to count the frequency of all elements from 1 to N in the array.
-    public static void frequencyCount(int arr[], int N, int P) {
-        // do modify in the given array
-       
-       P++;
-        for(int i=0;i<N;i++){
-            int idx = arr[i]%P-1;
-            if(idx >= 0 && idx < N){
-                arr[idx] = arr[idx] + P;
-            }
-        }
-        for(int i=0;i<N;i++){
-            arr[i] = arr[i] / P;
-        }
     }
 }
 2)Highest/Lowest Frequency :
