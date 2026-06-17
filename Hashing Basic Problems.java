@@ -21,31 +21,31 @@ Brute Force Approach : TC : O(N) & SC : O(N)
     }
 }
                                  OR
+
 class Solution {
-    // Function to count the frequency of all elements from 1 to N in the array.
-    public static void frequencyCount(int arr[], int N, int P) {
-        // do modify in the given array\
-        HashMap<Integer,Integer> hm = new HashMap<>();
-        for(int i=0;i<N;i++){
-            if(hm.containsKey(arr[i])){
-                hm.put(arr[i],hm.get(arr[i])+1);
-             }
-             else{
-                 hm.put(arr[i],1);
-             }
-        }
-    for(int i=0;i<arr.length;i++){
-        arr[i] = 0;
-    }
-    for(Map.Entry<Integer,Integer> e : hm.entrySet()){
-        if(e.getKey()<=N){
-         arr[e.getKey()-1] = e.getValue();   
-        }
-    }
+    public List<Integer> frequencyCount(int[] arr) {
+        // code here
+       HashMap<Integer,Integer> hm = new HashMap<>();
+       ArrayList<Integer> al = new ArrayList<>();
+       int n = arr.length;
+       for(int i=1;i<=n;i++){
+           hm.put(i,0);
+       }
+       for(int i=0;i<n;i++){
+           if(hm.containsKey(arr[i])){
+               int f = hm.get(arr[i]);
+               hm.put(arr[i],f+1);
+           }
+       }
+       for(Map.Entry<Integer,Integer> entry : hm.entrySet()){
+           al.add(entry.getValue());
+       }
+       return al;
     }
 }
 Space Optimised Approach : TC : O(N) & SC : O(1)
-To understand this problem even better do check it out at my medium account(https://medium.com/@wajiha25/problem-from-striver-a2z-sheet-topic-hashing-gfg-easy-level-bdf860a2c2ed)
+To understand this problem even better do check it out at my medium account
+https://medium.com/@wajiha25/problem-from-striver-a2z-sheet-topic-hashing-gfg-easy-level-bdf860a2c2ed
 
 class Solution {
     // Function to count the frequency of all elements from 1 to N in the array.
